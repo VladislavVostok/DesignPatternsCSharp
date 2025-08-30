@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory(Concept)", "Abstract Factory\AbstractFactory(Concept).csproj", "{C18F3262-FE30-43F3-8AEC-8CAD558675B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationPatterns", "CreationPatterns", "{2E98E951-6371-4E3D-8DCA-6C9693E54632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBSysteAbstractFactory_Concrete", "DBSysteAbstractFactory_Concrete\DBSysteAbstractFactory_Concrete.csproj", "{827D5652-2C42-46CD-999D-E59F8044C722}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C18F3262-FE30-43F3-8AEC-8CAD558675B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C18F3262-FE30-43F3-8AEC-8CAD558675B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C18F3262-FE30-43F3-8AEC-8CAD558675B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C18F3262-FE30-43F3-8AEC-8CAD558675B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{827D5652-2C42-46CD-999D-E59F8044C722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{827D5652-2C42-46CD-999D-E59F8044C722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{827D5652-2C42-46CD-999D-E59F8044C722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{827D5652-2C42-46CD-999D-E59F8044C722}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C18F3262-FE30-43F3-8AEC-8CAD558675B4} = {2E98E951-6371-4E3D-8DCA-6C9693E54632}
+		{827D5652-2C42-46CD-999D-E59F8044C722} = {2E98E951-6371-4E3D-8DCA-6C9693E54632}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9597674-D68C-4FA0-817A-89BCF129A117}
+	EndGlobalSection
+EndGlobal

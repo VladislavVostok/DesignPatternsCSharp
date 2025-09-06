@@ -7,11 +7,11 @@
 
 	abstract class Creator
 	{
-		public abstract IProduct FactoryMethod();
+		public abstract Task<IProduct> FactoryMethodAsync();
 
-		public string SomeOperation()
+		public async Task<string> SomeOperation()
 		{
-			var product = FactoryMethod();
+			var product = await FactoryMethodAsync();
 			var res = "Создатель: Некоторый код создателя просто работал с " + product.Operation();
 			return res;
 		}
@@ -19,17 +19,19 @@
 
 	class ConcreteCreator1 : Creator
 	{
-		public override IProduct FactoryMethod()
+		public async override Task<IProduct> FactoryMethodAsync()
 		{
+			await Task.Delay(10);
 			return new ConcreteProduct1();
 		}
 	}
 
 	class ConcreteCreator2 : Creator
 	{
-		public override IProduct FactoryMethod()
+		public async override Task<IProduct> FactoryMethodAsync()
 		{
-			return new ConcreteProduct2();
+            await Task.Delay(10);
+            return new ConcreteProduct2();
 		}
 	}
 

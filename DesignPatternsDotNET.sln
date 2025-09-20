@@ -33,11 +33,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator_Concept", "Decora
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator_Concrete", "Decorator_Concrete\Decorator_Concrete.csproj", "{02FE6489-EEA2-4A31-B989-48D8156B966D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy_Conceptual", "Proxy_Conceptual\Proxy_Conceptual.csproj", "{6B84D238-906D-4875-B78C-4297F0BF1ABB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy_Conceptual", "Proxy_Conceptual\Proxy_Conceptual.csproj", "{6B84D238-906D-4875-B78C-4297F0BF1ABB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade_Conceptual", "Facade_Conceptual\Facade_Conceptual.csproj", "{DBC07C35-2FF7-46FB-B6D5-EFC258ECBBAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade_Conceptual", "Facade_Conceptual\Facade_Conceptual.csproj", "{DBC07C35-2FF7-46FB-B6D5-EFC258ECBBAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight_Conceptual", "Flyweight_Conceptual\Flyweight_Conceptual.csproj", "{BBED6825-0CB1-41EE-BDD9-FCE3ABCDFF48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flyweight_Conceptual", "Flyweight_Conceptual\Flyweight_Conceptual.csproj", "{BBED6825-0CB1-41EE-BDD9-FCE3ABCDFF48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite_Conceptual", "Composite_Conceptual\Composite_Conceptual.csproj", "{F204F34E-84BA-4164-85C3-064541DDB8FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite_Concrete", "Composite_Concrete\Composite_Concrete.csproj", "{AEE6250C-AEED-4383-A275-78A2B49AF4AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehaviorPatterns", "BehaviorPatterns", "{04A91158-6997-4AD6-BC5F-48390E35F16C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator_Conceptual", "Iterator_Conceptual\Iterator_Conceptual.csproj", "{26431580-C3B5-4F51-9064-3AF86C5955FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +117,18 @@ Global
 		{BBED6825-0CB1-41EE-BDD9-FCE3ABCDFF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBED6825-0CB1-41EE-BDD9-FCE3ABCDFF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBED6825-0CB1-41EE-BDD9-FCE3ABCDFF48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F204F34E-84BA-4164-85C3-064541DDB8FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F204F34E-84BA-4164-85C3-064541DDB8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F204F34E-84BA-4164-85C3-064541DDB8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F204F34E-84BA-4164-85C3-064541DDB8FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE6250C-AEED-4383-A275-78A2B49AF4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE6250C-AEED-4383-A275-78A2B49AF4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE6250C-AEED-4383-A275-78A2B49AF4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE6250C-AEED-4383-A275-78A2B49AF4AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26431580-C3B5-4F51-9064-3AF86C5955FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26431580-C3B5-4F51-9064-3AF86C5955FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26431580-C3B5-4F51-9064-3AF86C5955FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26431580-C3B5-4F51-9064-3AF86C5955FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +150,9 @@ Global
 		{6B84D238-906D-4875-B78C-4297F0BF1ABB} = {FDEE5884-785B-490E-9FF6-A380CDFAFE80}
 		{DBC07C35-2FF7-46FB-B6D5-EFC258ECBBAC} = {FDEE5884-785B-490E-9FF6-A380CDFAFE80}
 		{BBED6825-0CB1-41EE-BDD9-FCE3ABCDFF48} = {FDEE5884-785B-490E-9FF6-A380CDFAFE80}
+		{F204F34E-84BA-4164-85C3-064541DDB8FD} = {FDEE5884-785B-490E-9FF6-A380CDFAFE80}
+		{AEE6250C-AEED-4383-A275-78A2B49AF4AB} = {FDEE5884-785B-490E-9FF6-A380CDFAFE80}
+		{26431580-C3B5-4F51-9064-3AF86C5955FC} = {04A91158-6997-4AD6-BC5F-48390E35F16C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9597674-D68C-4FA0-817A-89BCF129A117}

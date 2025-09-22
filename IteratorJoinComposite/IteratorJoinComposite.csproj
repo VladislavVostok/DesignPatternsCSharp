@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Prototype_Concrete\Prototype_Concrete.csproj" />
-  </ItemGroup>
-
 </Project>

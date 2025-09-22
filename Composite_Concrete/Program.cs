@@ -1,6 +1,14 @@
 ﻿namespace Composite_Concrete
 {
 
+    public interface IOrderIterator
+    {
+        OrderComponent Current { get; }
+        bool MoveNext();
+        void Reset();
+    }
+
+
     public abstract class OrderComponent
     {
         public abstract decimal CalculateTotal();
@@ -9,9 +17,83 @@
 
         public virtual void Remove(OrderComponent component) => 
             throw new NotImplementedException();
+
+        public virtual IOrderIterator CreateIterator() => "fasdfasdf"
+            
+        public virtual IEnumerable<OrderComponent> GetChildren() => 
+            Enumerable.Empty<OrderComponent>(); 
     }
 
-    public class Product : OrderComponent { 
+    public class NullIterator : IOrderIterator
+    {
+        public OrderComponent Current => null;
+
+        public bool MoveNext() => false;
+
+        public void Reset() { }
+
+	}
+
+	public class CompositeIterator : IOrderIterator
+	{
+
+        private readonly Stack<IOrderIterator> _stack = new();
+        public CompositeIterator(IOrderIterator iterator) { 
+            _stack.Push(iterator);
+        }
+
+		public OrderComponent Current => _stack.Count > 0 ? _stack.Peek().Current: null;
+
+		public bool MoveNext()
+		{
+            if (_stack.Count == 0) return false;
+            var iterator = _stack.Peek();
+            if (!iterator.MoveNext())
+            {
+                _stack.Pop();
+                return MoveNext();
+            }
+
+            var current = iterator.Current;
+
+            if(current is ProductBundle)
+            {
+                _stack.Push(current.CreateIterator());
+            }
+            return true;
+		}
+
+		public void Reset()
+		{
+			throw new NotImplementedException();
+		}
+	}
+
+    public class DepthFirstIterator: IOrderIterator
+    {
+        private readonly List<OrderComponent> _components;
+        private int _position = -1;
+
+        public DepthFirstIterator(OrderComponent component)
+        {
+            
+        }
+
+		public OrderComponent Current => throw new NotImplementedException();
+
+		public bool MoveNext()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Reset()
+		{
+			throw new NotImplementedException();
+		}
+	}
+
+
+	public class Product : OrderComponent { 
     
         public string Name { get; private set; }
         public decimal Price { get; private set; }

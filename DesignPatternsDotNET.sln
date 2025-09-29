@@ -55,9 +55,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator_with_Composite_Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator_Conceptual", "Iterator_Conceptual\Iterator_Conceptual.csproj", "{34F7E10C-5755-47BD-8A78-AA9927379A92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer_Concrete", "Observer_Concrete\Observer_Concrete.csproj", "{F57800F2-ED99-43C7-B5F8-21D9F5ACE156}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer_Concrete", "Observer_Concrete\Observer_Concrete.csproj", "{F57800F2-ED99-43C7-B5F8-21D9F5ACE156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator_Conceptual", "Mediator_Conceptual\Mediator_Conceptual.csproj", "{32C992CB-C1F6-4286-A629-52F0C4032F31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator_Conceptual", "Mediator_Conceptual\Mediator_Conceptual.csproj", "{32C992CB-C1F6-4286-A629-52F0C4032F31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility_Conceptual", "ChainOfResponsibility_Conceptual\ChainOfResponsibility_Conceptual.csproj", "{32EB3FEB-368D-4F9B-906E-1A466729FFB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento_Conceptual", "Memento_Conceptual\Memento_Conceptual.csproj", "{8D652306-45E6-481A-83DD-7125B00D1117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State_Conceptual", "State_Conceptual\State_Conceptual.csproj", "{47D556D3-5DFC-4ABA-B201-9A038EC68920}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +171,18 @@ Global
 		{32C992CB-C1F6-4286-A629-52F0C4032F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32C992CB-C1F6-4286-A629-52F0C4032F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32C992CB-C1F6-4286-A629-52F0C4032F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32EB3FEB-368D-4F9B-906E-1A466729FFB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EB3FEB-368D-4F9B-906E-1A466729FFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EB3FEB-368D-4F9B-906E-1A466729FFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EB3FEB-368D-4F9B-906E-1A466729FFB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D652306-45E6-481A-83DD-7125B00D1117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D652306-45E6-481A-83DD-7125B00D1117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D652306-45E6-481A-83DD-7125B00D1117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D652306-45E6-481A-83DD-7125B00D1117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D556D3-5DFC-4ABA-B201-9A038EC68920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D556D3-5DFC-4ABA-B201-9A038EC68920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D556D3-5DFC-4ABA-B201-9A038EC68920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D556D3-5DFC-4ABA-B201-9A038EC68920}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -195,6 +213,9 @@ Global
 		{34F7E10C-5755-47BD-8A78-AA9927379A92} = {F3F98E05-4EC9-4511-A04E-08FBBBD64975}
 		{F57800F2-ED99-43C7-B5F8-21D9F5ACE156} = {F3F98E05-4EC9-4511-A04E-08FBBBD64975}
 		{32C992CB-C1F6-4286-A629-52F0C4032F31} = {F3F98E05-4EC9-4511-A04E-08FBBBD64975}
+		{32EB3FEB-368D-4F9B-906E-1A466729FFB8} = {F3F98E05-4EC9-4511-A04E-08FBBBD64975}
+		{8D652306-45E6-481A-83DD-7125B00D1117} = {F3F98E05-4EC9-4511-A04E-08FBBBD64975}
+		{47D556D3-5DFC-4ABA-B201-9A038EC68920} = {F3F98E05-4EC9-4511-A04E-08FBBBD64975}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9597674-D68C-4FA0-817A-89BCF129A117}

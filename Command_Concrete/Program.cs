@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Command_Concrete
+﻿namespace Command_Concrete
 {
 	// ==================== INTERFACES ====================
 	public interface ICommand
